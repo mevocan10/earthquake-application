@@ -3,18 +3,16 @@ package com.example.depremapp;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.depremapp.databinding.ActivityMainBinding;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
 import com.example.depremapp.databinding.FragmentDepremBinding;
 import com.example.depremapp.models.Earthquake;
 import com.example.depremapp.service.EarthquakeService;
@@ -23,6 +21,7 @@ import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.BoundingBox;
 import org.osmdroid.util.GeoPoint;
+import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
@@ -50,6 +49,11 @@ public class depremFragment extends Fragment {
         map.setTileSource(TileSourceFactory.MAPNIK);
         map.getController().setZoom(6.5);
         map.getController().setCenter(new GeoPoint(39.0570, 34.4641));
+        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
+        ImageButton zoomInButton = binding.zoomInButton;
+        ImageButton zoomOutButton = binding.zoomOutButton;
+        zoomInButton.setOnClickListener(view -> map.getController().zoomIn());
+        zoomOutButton.setOnClickListener(view -> map.getController().zoomOut());
         earthquakeService = new EarthquakeService();
         handler = new Handler();
         runnable = new Runnable() {
