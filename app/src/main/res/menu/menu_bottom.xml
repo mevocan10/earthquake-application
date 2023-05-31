@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Deprem"
+        android:id="@+id/deprem"
+        android:icon="@drawable/live"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="@color/holo_orange_dark1"
+        />
+    <item
+        android:title="Fener"
+        android:id="@+id/fener"
+        android:icon="@drawable/torch"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="@color/holo_orange_dark1"
+        />
+    <item
+        android:title="Ses"
+        android:id="@+id/ses"
+        android:icon="@drawable/whistle"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="@color/holo_orange_dark1"
+        />
+    <item
+        android:title="Ara"
+        android:id="@+id/ara"
+        android:icon="@drawable/sos"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="@color/holo_orange_dark1"
+        />
+</menu>

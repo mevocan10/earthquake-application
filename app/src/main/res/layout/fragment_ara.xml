@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".araFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/acilButton"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:backgroundTintMode="screen"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/acil" />
+
+    <ImageButton
+        android:id="@+id/firemanButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTintMode="screen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fireman" />
+
+    <ImageButton
+        android:id="@+id/afadButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTintMode="screen"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/earthquake" />
+    <ImageButton
+        android:id="@+id/forestButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTintMode="screen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/forest" />
+    <ImageButton
+        android:id="@+id/policeButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTintMode="screen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/police" />
+</RelativeLayout>

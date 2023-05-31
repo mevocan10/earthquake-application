@@ -1,0 +1,11 @@
+
+<resources>
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    
+</style>
+    <style name="x">
+        <item name="fontFamily">@font/font2</item>
+    </style>
+
+
+</resources>
