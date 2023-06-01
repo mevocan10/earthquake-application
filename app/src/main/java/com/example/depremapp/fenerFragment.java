@@ -57,9 +57,11 @@ public class fenerFragment extends Fragment {
             if (isFlashOn) {
                 flashOffMethod();
                 imageButton.setImageResource(R.drawable.torch_off);
+                Toast.makeText(getContext(), "Fener kapandı.", Toast.LENGTH_SHORT).show();
             } else {
                 flashOnMethod();
                 imageButton.setImageResource(R.drawable.torch_on);
+                Toast.makeText(getContext(), "Fener açıldı.", Toast.LENGTH_SHORT).show();
             }
         });
         return view;
