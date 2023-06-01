@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="holo_orange_dark">#ff7f50</color>
     <color name="holo_orange_dark1">#ff9966</color>
+    <color name="gri">#292929</color>
+
 </resources>

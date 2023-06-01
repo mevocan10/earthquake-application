@@ -10,8 +10,8 @@
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
         android:id="@+id/acilButton"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
         android:backgroundTintMode="screen"
         android:scaleType="fitCenter"
         android:layout_marginTop="40dp"
@@ -19,48 +19,28 @@
         android:src="@drawable/acil" />
 
     <ImageButton
-        android:id="@+id/firemanButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/forestButton"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="90dp"
-        android:backgroundTintMode="screen"
-        android:scaleType="fitCenter"
-        android:src="@drawable/fireman" />
-
-    <ImageButton
-        android:id="@+id/afadButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTintMode="screen"
-        android:scaleType="fitCenter"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="90dp"
-        android:src="@drawable/earthquake" />
-    <ImageButton
-        android:id="@+id/forestButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTintMode="screen"
         android:scaleType="fitCenter"
         android:src="@drawable/forest" />
+
     <ImageButton
-        android:id="@+id/policeButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="300dp"
+        android:id="@+id/afadButton"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:backgroundTintMode="screen"
         android:scaleType="fitCenter"
-        android:src="@drawable/police" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/earthquake" />
+
+
 </RelativeLayout>
